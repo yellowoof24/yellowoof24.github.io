@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script>
+    
+      function copy1() {
+        var obj = document.getElementById("lam");
+        obj.select();
+        document.execCommand("copy");
+        obj.setSelectionRange(0, 0);
+        alert("복사됬습니다!")
+      }
+      function bed() {
+        document.getElementById("lam").value = btoa(encodeURIComponent(document.getElementById("hi").value))
+      }
+      function bdd() {
+        document.getElementById("rem").value = decodeURIComponent(atob(document.getElementById("aja").value))
+      }
+    </script>
+  </head>
+  <body>
+    <div class="ha" id="hs">
+      <h1>암호화 툴</h1>
+      <input type="text" class="encodebox" id="hi" placeholder="텍스트를 넣어주세요"/>
+      <button class="encode" onclick="bed()">암호화</button>
+      <br>
+      <input type="text" id="lam" readonly="true"/>
+      <button class="copy1" onclick="copy1()">복사</button>
+    </div>
+    <br>
+    <br>
+    <div class="ha" id="hs">
+      <h1>복호화 툴</h1>
+      <input type="text" class="decodebox" id="aja" placeholder="텍스트를 넣어주세요"/>
+      <button class="encode" onclick="bdd()">복호화</button>
+      <br>
+      <input type="text" id="rem" readonly="true"/>
+      <button class="copy2" onclick="copy2()">복사</button>
+    </div>
+  </body>
+</html>
