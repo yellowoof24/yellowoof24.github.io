@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lolblox</title>
+    <style>
+        .div {
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20%;
+            display: flex;
+            align-items: center;
+        }
+
+        .white {
+            background-color: white;
+            width: 15px;
+            height: 15px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        div {
+            animation: a;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes a {
+            from {
+                transform: rotate(10deg);
+            }
+            to {
+                transform: rotate(370deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="white"></div>
+    </div>
+</body>
+</html>
